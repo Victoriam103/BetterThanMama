@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="contacto.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Habla con nosotros</h2>
+                <form method="post" action="formulario.php">
+				<input type="text" class="field" name="nombre" placeholder="Tu nombre">
+				<input type="text" class="field" name="email" placeholder="Tu email">
+				<input type="text" class="field" name="telefono" placeholder="Telefono">
+				<textarea placeholder="Escribe tu mensaje" name="mensaje" class="field"></textarea>
+				<input type="submit" class="btn"></button>
+                </form>
+			</div>
+		</div>
+	</div>
+</body>
+<div id="cookieBanner" style="position:fixed;bottom:0;left:0;width:100%;background-color:#f1f1f1;padding:10px;text-align:center;z-index:10000;display:none;">
+	Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar utilizando nuestro sitio, acepta nuestra política de cookies.
+	<button onclick="aceptarCookies();">Aceptar</button>
+	<button onclick="rechazarCookies();">Rechazar</button>
+  </div>
+  <script scr="cookie.js"></script>
+</html>

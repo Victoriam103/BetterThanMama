@@ -1,0 +1,63 @@
+body {
+    background: url("https://img.freepik.com/vector-premium/patron-transparente-vector-frutas-verduras-hecho-iconos-linea-perfecto-sitios-web-envuelve-fondos-pantalla-postales_387335-474.jpg?w=2000");
+    font-family: Arial, sans-serif;
+    color: purple;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1, h2, h3 {
+    color: purple;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 0px green;
+} 
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="email"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 16px;
+    color: purple;
+    background-color: white;
+    margin-left: -10px;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    text-decoration: underline;
+    
+  }
+
+input[type="submit"]:hover::after{
+    transform: scaleX(1);
+  }
+
+
+
+p {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}

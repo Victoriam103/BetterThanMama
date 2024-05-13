@@ -1,0 +1,158 @@
+/* Estilos para el body */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("https://img.freepik.com/vector-premium/patron-transparente-vector-frutas-verduras-hecho-iconos-linea-perfecto-sitios-web-envuelve-fondos-pantalla-postales_387335-474.jpg?w=2000");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Estilos para el header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/04/21/04/18/fruit-5070732_1280.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Estilos para el botón del menú hamburguesa */
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Estilos para el botón del menú hamburguesa cuando está abierto */
+  .menu-btn.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-btn.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-btn.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Estilos para el menú desplegable */
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+  
+  .menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .menu-container ul li {
+    margin: 20px 0;
+  }
+  
+  .menu-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .menu-container.active {
+    display: block;
+    text-align: center;
+  }
+  /* Estilos para el formulario */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  form {
+    background-color: #f9dfe5;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-color: #f48fb1
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    select {
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+    
+    #cerrar-menu, input[type="submit"] {
+      background-color: #f67280;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    #cerrar-menu, input[type="submit"]:hover {
+      background-color: #f48fb1;
+    }
+    
